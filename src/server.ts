@@ -1,9 +1,9 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import connectToDatabase from "./src/db";
-import categoryRoutes from "./src/routes/category.routes";
-import taskRoutes from "./src/routes/task.routes";
-import userRoutes from "./src/routes/user.routes";
+import connectToDatabase from "./db";
+import categoryRoutes from "./routes/category.routes";
+import taskRoutes from "./routes/task.routes";
+import userRoutes from "./routes/user.routes";
 
 const application = express();
 
@@ -25,3 +25,5 @@ application.use("/tasks", taskRoutes);
 application.listen(PORT, () => {
   console.log("Server up and running");
 });
+
+export default application;

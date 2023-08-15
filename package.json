@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node ./src/server.ts && node ./dist/server.js",
-    "start": "node ./dist/server.js"
+    "start": "node ./dist/server.js",
+    "vercel-build": "echo hello"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
