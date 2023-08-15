@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectToDatabase = async () => {
   try {
     const connection = await mongoose.connect(
-      "mongodb://127.0.0.1:27017/blossom-app"
+      "mongodb+srv://dungvang033:<password>@tutorial.bxfz8fv.mongodb.net/?retryWrites=true&w=majority"
     );
     if (connection) {
       console.log("Connection established");
